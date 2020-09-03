@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Card from './Card';
-import Navbar from './Navbar';
+
 import useFetcherImg from '../hooks/useFetcherImg';
 import useFetcher from '../hooks/useFetcher';
 import getToken from '../hooks/APIController';
@@ -15,7 +15,7 @@ const Main = () => {
   return (
     <div>
       {/* <Navbar fetchImg={() => fetchImg()} /> */}
-      <Navbar />
+      
       <Categories categories={categories}/>
       <main className="mt-3">
         <div className="container">

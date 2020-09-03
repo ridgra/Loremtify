@@ -1,4 +1,5 @@
 import React from 'react';
+import { useParams, Link } from 'react-router-dom';
 
 const Navbar = ({}) => {
   return (
@@ -10,9 +11,9 @@ const Navbar = ({}) => {
         >
           <div className="container-fluid">
             <div className="container">
-              <a className="navbar-brand" href="#">
+              <Link className="navbar-brand" to="/">
                 Loremtify
-              </a>
+              </Link>
               <div className="col d-lg-flex justify-content-lg-center align-items-lg-center">
                 <div className="input-group" style={{ maxWidth: '50vh' }}>
                   <div className="input-group-prepend">
@@ -27,9 +28,9 @@ const Navbar = ({}) => {
                   ></input>
                 </div>
               </div>
-              <a className="navbar-brand" href="">
+              <Link className="navbar-brand" to="/favorites">
                 Favorites
-              </a>
+              </Link>
             </div>
           </div>
         </nav>
