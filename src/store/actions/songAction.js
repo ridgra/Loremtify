@@ -1,5 +1,3 @@
-
-
 const options = ({ method, access_token }) => {
   return {
     method,

@@ -8,7 +8,9 @@ import { HomePage, SongsPage, FavoritesPage, DetailsPage } from './pages';
 import Navbar from './components/Navbar';
 import Main from './components/Main';
 import './App.css';
-dotenv.config();
+if (process.env.NODE_ENV == 'development') {
+  dotenv.config();
+}
 
 export const MyRouter = () => (
   <Switch>

@@ -7,14 +7,6 @@ const FavoritesPage = (props) => {
 
   const favorites = useSelector((state) => state.favoriteReducer.favorites);
 
-
-  console.log(favorites, 'page');
-  // useEffect(() => {
-  //   (async () => {
-  //     await dispatch(fetchSongs(categoryId));
-  //   })();
-  // }, []);
-
   return (
     <>
       <main className="mt-3 pt-5">

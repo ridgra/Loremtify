@@ -18,12 +18,10 @@ export default (props) => {
   return (
     <>
       <main className="mt-3 pt-5">
-        {/* {{categories }} */}
         <div className="container">
           <div className="row" style={{ minHeight: '90vh' }}>
             <div className="col-6 my-auto">
               <div className="row">
-                {/* {JSON.stringify(categories)} */}
                 <div className="col">
                   <h2 className="text-center mb-5">
                     Get album recommendations by category
@@ -38,7 +36,6 @@ export default (props) => {
                         className="btn btn-outline-dark rounded-lg m-2"
                         style={{ cursor: 'pointer' }}
                         key={idx}
-                        
                       >
                         <Link to={`/${category}/songs`}>{category}</Link>
                       </span>

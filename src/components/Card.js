@@ -9,10 +9,11 @@ const Card = ({ image, title, artist, albumId }) => {
       <div className="col-4 my-2">
         <div className="card">
           <div className="card-body" style={{ padding: '0' }}>
+            {/* style={{ paddingTop: '100%' }} */}
             <img
               className="img-thumbnail"
               src={image}
-              style={{ width: '100%', maxHeight: '100%' }}
+              style={{ width: '100%', paddingTop: '0%' }}
             ></img>
             <div className="row py-2 px-3">
               <div className="col-9">
@@ -23,6 +24,8 @@ const Card = ({ image, title, artist, albumId }) => {
               </div>
               <div className="col-auto ml-auto">
                 <i
+                  data-toggle="tooltip"
+                  title="Add to favorites"
                   onClick={() => {
                     const payload = { image, title, artist, albumId };
                     dispatch(setFavorites(payload));
@@ -31,6 +34,7 @@ const Card = ({ image, title, artist, albumId }) => {
                   className="far fa-heart"
                   style={{ fontSize: 'x-large', cursor: 'pointer' }}
                 ></i>
+
               </div>
             </div>
           </div>

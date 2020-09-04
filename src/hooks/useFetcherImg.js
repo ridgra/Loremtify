@@ -4,8 +4,6 @@ function useFetcher(url) {
   const [images, setImages] = useState([]);
   const options = {
     method: 'GET',
-    // headers: { Authorization: process.env.REACT_APP_AUTH_SPOTIFY },
-    // redirect: 'follow',
   };
 
   useEffect(() => {
