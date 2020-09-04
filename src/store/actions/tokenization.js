@@ -1,7 +1,6 @@
 export function tokenization() {
   return async (dispatch, getState) => {
     try {
-      // console.log( '<<<<<<<< here');
       const clientId = process.env.REACT_APP_CLIENTIDSPOTIFY;
       const clientSecret = process.env.REACT_APP_CLIENTSECRETSPOTIFY;
       const result = await fetch('https://accounts.spotify.com/api/token', {
