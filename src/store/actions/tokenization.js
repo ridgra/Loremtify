@@ -13,7 +13,6 @@ export function tokenization() {
       });
 
       const data = await result.json();
-      console.log(data.access_token, '<<<<');
       await dispatch({
         type: 'SET_TOKEN',
         payload: {
@@ -21,8 +20,6 @@ export function tokenization() {
         },
       });
     } catch (err) {
-      console.log('errror');
-      console.log(err, '<<<<');
     }
   };
   // return data.access_token;
