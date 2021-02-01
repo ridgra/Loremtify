@@ -9,7 +9,7 @@
 ## Features
 
 - **Create React App** to build a single page app
-- **Redux**, **React-redux**, and **Redux-thunk** untuk fetch dan state management
+- **Redux**, **React-redux**, and **Redux-thunk** to store fetched data and state management
 
 ## Deployment
 
